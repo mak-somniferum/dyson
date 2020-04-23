@@ -1,4 +1,4 @@
 # dyson
 dyson renewal project
 
-with BK, SW, ZY
+with BK, SW, ZY, SJ
