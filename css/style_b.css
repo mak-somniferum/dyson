@@ -46,21 +46,24 @@
 .cust_check_box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 .cust_check_box li{
     width: 500px;
     height: 500px;
     border: 1px solid #e3e3e3;
-    margin: 2.5% 0;
+    margin: 2.5% auto;
     cursor: pointer;
     position: relative;
+}
+.cust_check_box li:last-child{
+    margin: 2.5% 50px;
 }
 .cust_img{
     width: 60%;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 1px;
     transform: translatex(-50%);
 }
 .cust_text{
@@ -71,6 +74,7 @@
     padding: 10px 20px;
     background: #fff;
     border: 1px solid #616161;
+    border-radius: 5px;
 }
 .cust_text2{
     width: 100%;
@@ -104,6 +108,7 @@
     position: relative;
 }
 .cust_part_box li{
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -131,6 +136,9 @@
     .cust_check_box li{
         width: 50%;
         height: 50%;
+        margin: 0;
+    }
+    .cust_check_box li:last-child{
         margin: 0;
     }
     .cust_part_box li{
