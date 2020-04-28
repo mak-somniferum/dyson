@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" conten="width=device-width, initial-scale=1.0">
     <title>Dyson KR</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_jy.css">
 </head>
 <body>
     <header id="header"></header>
@@ -21,6 +22,27 @@
         <!-- 프로모션 -->
 
         <section class="register">
+
+            <!-- desktop -->
+            <div class="regi_bg">
+                <img class="regi_bg_img" src="/img/bg4.png" alt="">
+                <img class="regi_bg_img" src="/img/bg4_blur1.png" alt="">
+
+            <!-- tablet, mobile -->
+            <div class="regi_bg_m">
+                <img src="img/resister_m_bg3.png" alt="">
+            </div>
+            <div class="regi_prod">
+                <img src="img/275902-01.png" alt="">
+            </div>
+            </div>
+
+
+            <div class="regi_txt">
+                <h2>제품을 등록하여 무상보증을 활성화하세요.</h2>
+                <h3>빠른 맞춤 지원으로 제품을 최대한 활용하세요.</h3>
+                <button>제품등록</button>
+            </div>
 
         </section>
         <!-- 제품등록 -->
@@ -44,5 +66,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script>
+
+        $('.regi_bg_img').first().fadeOut(2000)
+        $('.regi_bg_img').last().fadeIn(2000)
+
+        $('.regi_txt').animate({'opacity':'1', top:'35%'},1500)
+
+        $('.regi_bg_m').animate({'height':'50%'},2000)
+        $('.regi_prod').animate({bottom : '15%'},2000)
+
+    </script>
 </body>
 </html>
