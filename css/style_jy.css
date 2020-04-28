@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+.register{
+    width: 100%;
+    height: 60vh;
+    /*background-image: url(/img/bg4.png);
+    /*background-size: contain;
+    /*background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.regi_bg{
+    height: 100%;
+    position: relative;
+    border: 1px solid red;
+}
+.regi_bg_img{
+    height: 100%;
+    border: 1px solid #ccc;
+    position: absolute;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.regi_bg_img:nth-child(2){
+    display: none;
+}
+.regi_bg_m{
+    opacity: 0;
+}
+.regi_prod{
+    opacity: 0;
+}
+.regi_txt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #ccc;
+    opacity: 0;
+    font-size: 1vw;
+}
+.regi_txt h2{
+    margin: 15px;
+}
+.regi_txt h3{
+    margin: 15px;
+}
+.register button{
+    width: 30%;
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #fff;
+    margin: 15px;
+}
+
+ @media only screen and (max-width: 1200px) {
+
+    .regi_bg_img{
+        opacity: 0;
+    }
+    .regi_bg_m{
+        width: 100%;
+        height: 80%;
+        opacity: 1;
+        position: relative;
+        background-color: #d7d7d7;
+    }
+    .regi_bg_m img{
+        width: 40%;
+        position: absolute;
+        border: 1px solid #000;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+    }
+    .regi_prod{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 15%;
+        opacity: 1;
+        border: 1px solid #000;
+    }
+    .regi_txt{
+        top: 23%;
+        left: 50%;
+        opacity: 0;
+        font-size: 1.4vw;
+        padding-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
+
+
+    .regi_prod{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 15%;
+        opacity: 1;
+        border: 1px solid #000;
+    }
+    .regi_txt{
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        font-size: 1.4vw;
+        padding-top: 30px;
+    }
+
+  }
