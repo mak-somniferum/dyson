@@ -14,10 +14,10 @@ $('.cust_check_box li').click(function(){
     $('.cust_part_box li').eq(idx).fadeIn()
 })
 $('.cust_check_box li').mouseenter(function(){
-    $(this).find('img').animate({'width': '70%'})
+    $(this).find('img').stop().animate({'width': '70%'})
 })
 $('.cust_check_box li').mouseleave(function(){
-    $('.cust_check_box img').animate({'width': '60%'})
+    $('.cust_check_box img').stop().animate({'width': '60%'})
 })
 $('.cust_check_text li').click(function(){
     var idx = $(this).index()
