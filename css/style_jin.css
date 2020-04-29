@@ -1,0 +1,39 @@
+/* main */
+#main .products {height:100vh; padding-top:70px; position: relative; overflow: hidden;}
+#main .products .dim {width:100%; height:100%; position:absolute; left:0; top:0; background: linear-gradient(to top, rgba(0,0,0,1) 15%,rgba(0,0,0,0) 100%); z-index:1;}
+#main .products .bg_video {min-width:100%; min-height:100%; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); z-index:0;}
+
+.main_pro {display:flex; flex-flow:row wrap; position:absolute; left:0; bottom:0; z-index:2; width:100%;}
+.main_pro li {flex:1 0 auto; width:20%; opacity:.6; transition:.4s;}
+.main_pro li:hover {width:80%;}
+.main_pro li a {display:block; padding:20px 5% 50px; font-size:13px; text-align:center; color:#fff; position:relative;}
+.main_pro li a video {opacity:0; position:absolute; left:50%; top:0; transform: translate(-50%, 0); min-width:100%; min-height:100%; transition:.4s;}
+.main_pro li:hover a video {opacity:1;}
+.main_pro li a span {display:block; margin-bottom:40px;}
+.main_pro li a span img {max-height:240px; transition:.4s;}
+
+
+
+@media (max-width:1200px){
+    
+}
+@media (max-width:1024px){
+    .main_pro li a span img {max-height:120px;}
+}
+@media (max-width:768px){
+    #main .products {height:auto; line-height:0;}
+    #main .products::before {display:none;}
+    #main .products .bg_video {width:100%; height:auto; position: static; transform: translate(0, 0);}
+    .main_pro {position:relative; left:0; top:0; background: #000; border-top:1px solid #1d1d1d;}
+    .main_pro li {opacity:1; width:50%; border-bottom:1px solid #1d1d1d; border-right:1px solid #1d1d1d;}
+    .main_pro li.newPro {width:100%;}
+    .main_pro li.newPro a {display:flex; flex-direction: row-reverse; justify-content: center; align-items: center; font-size:1.1rem; line-height:1.5;}
+    .main_pro li.newPro a span {margin-bottom:0;}
+    .main_pro li:nth-child(odd) {border-right:none;}
+    .main_pro li a {padding:30px 5%;}
+    .main_pro li a span {margin-bottom:20px;}
+    .main_pro li a span img {max-height:80px;}
+}
+@media (max-width:500px){
+    
+}
