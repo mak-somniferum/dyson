@@ -55,6 +55,8 @@
     margin: 15px;
 }
 
+/*******************main tablet ********************/
+
  @media only screen and (max-width: 1200px) {
 
     .regi_bg_img{
@@ -89,6 +91,8 @@
     }
   }
 
+/*******************main mobile ********************/
+
   @media only screen and (max-width: 768px) {
 
     .regi_prod{
@@ -110,23 +114,32 @@
   }
 
 
+
 /*************** sub page *****************/
+
+
 
 .regi_wrap{
     width: 60%;
-    height: 80%;
+    
     margin: auto;
     border: 1px solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .regi_sect{
     width: 100%;
     height: 80vh;
     border: 1px solid #000;
+}
+
+/************* section1 ****************/
+
+.regi_sect1_wrap{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .regi_sect1 h1{
     height: 20%;
@@ -161,6 +174,58 @@
 .regi_sect1_m{
     display: none;
 }
+
+/**************** section2 ******************/
+
+.regi_sect2_wrap{
+    height: 100%;
+}
+.regi_sect2_title{
+    width: 100%;
+    height: 25%;
+    background-color: #231f20;
+    color: #fff;
+    border: 1px solid red;
+    
+}
+.row_box{
+    width: 50px;
+    height: 50px;
+    background-color: #231f20;
+    position: absolute;
+    left: 49%;
+    top: 97%;
+    transform: translate(-50%,-50%);
+    transform: rotate(45deg);
+    z-index: 1;
+ 
+}
+.regi_sect2_title h1{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #fff;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regi_sect2_title img{
+    width: 50%;
+    height: 100%;
+    float: right;
+    border: 1px solid red;
+    
+}
+.regi_sect2_con{
+    width: 100%;
+    height: 75%;
+    border: 1px solid #000;
+    background-image: url(/img/regi_sect2_bg1.jpg);
+    background-size: contain;
+}
+
+/*************sub tablet ****************/
+
 @media only screen and (max-width: 1200px) {
     .regi_wrap{
         width: 100%;
@@ -172,6 +237,8 @@
         font-size: 1.5vw;
     }
   }
+
+/*************sub mobile ****************/
 
   @media only screen and (max-width: 768px) {
     .regi_sect1_m{
@@ -187,11 +254,14 @@
         align-items: center;
     }
     .regi_sect1_m .img_box{
-        height: 90%;
-        width: 15%;
+        height: 90px;
+        width: 90px;
         margin: 3%;
         border: 2px solid #ccc;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .regi_sect1_m .img_box img{
         width: 70%;
@@ -203,6 +273,7 @@
         display: flex;
         align-items: center;
         padding: 2%;
+        font-size: 4vw;
     }
     .regi_sect1_desk{
         display: none;
