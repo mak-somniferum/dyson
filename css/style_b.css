@@ -111,8 +111,6 @@
 .cust_part_box li{
     width: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
@@ -123,14 +121,19 @@
     margin: 40px 20px;
     position: relative;
 }
+.cust_part:last-child{
+    margin-bottom: 100px;
+}
 .customer_box{
     display: none;
 }
-
 @media screen and (max-width: 1200px){
 
 }
 @media screen and (max-width: 1024px){
+    .cust_wrap{
+        height: 150vw;
+    }
     .cust_check_box{
         height: 100vw;
     }

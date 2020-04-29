@@ -33,11 +33,22 @@ $('.cust_check_text li').click(function(){
     var idx = $(this).index()
     $('.cust_check_text li').removeClass('on')
     $(this).addClass('on')
-    $('.part_box li').fadeOut()
-    $('.part_box li').eq(idx).fadeIn()
+    $('.cust_part_box li').fadeOut()
+    $('.cust_part_box li').eq(idx).fadeIn()
 })
 
-
+$(window).resize(function(){
+    
+    if($(window).width()>1200){
+        $('.cust_part_box').height(2020)
+    }else if($(window).width()>960){
+        $('.cust_part_box').height(2580)
+    }else if($(window).width()>720){
+        $('.cust_part_box').height(3420)
+    }else{
+        $('.cust_part_box').height(4820)
+    }
+})
 
 
 
