@@ -1,0 +1,48 @@
+
+    /* 첫번째 페이지 *//* 첫번째 페이지 *//* 첫번째 페이지 *//* 첫번째 페이지 *//* 첫번째 페이지 */
+    
+    .s_sect1 {display: flex; flex-direction: column; width: 100%; height: 100%;}
+    .s_arti {width: 100%; height: 100vh; }
+    .s_arti1 {width: 100%; height: 90vh; margin-top: 10vh; display: flex; flex-direction: column; background-image: url(../img/star-2720923_1920.jpg); background-repeat: no-repeat; overflow: hidden;}
+    .s_arti1 > div {border: 1px solid rgb(255, 255, 255); width: 100%; height: 33.33%; color: black;font-size: 30px; flex: 1; }
+    .s_arti1 > div > div {width: 100%; height: 100%; background-color: rgba(19, 19, 19, 0.5);}
+    .s_arti1 > div > div:hover {background-color: rgba(14, 14, 14, 0.705);}
+    .s_arti1 > div > div p {display: flex; justify-content:center; font-size: 3em; font-weight: bold;  line-height: 2em; color: white; text-shadow:5px 5px 5px rgba(0, 0, 0, 0.712);}
+    .s_arti1 > div > div.s_pp p{color:rgb(141, 141, 141); text-shadow: 3px 3px 3px black; transition: 1s;}
+    .s_arti1_bg1,.s_arti1_bg2,.s_arti1_bg3 {position: relative; z-index: 1; width: 100%; height: 100%;}
+    .s_arti1_bg1:after,.s_arti1_bg2:after,.s_arti1_bg3:after {content:"";top:0;left:0;position:absolute;background-size: 50% 100%; background-repeat: no-repeat; opacity:0.3; filter:alpha(opacity=50); z-index:-1; width:100%; height:100%;}
+    .s_arti1_bg1:after { background-image:url(../img/pro_rap_img2.jpg); opacity: 0;}
+    .s_arti1_bg2:after {background-image:url(../img/pro_dry_img2.jpg); opacity: 0;}
+    .s_arti1_bg3:after {background-image:url(../img/pro_dry_img1.jpg); opacity: 0;}
+    .s_arti1_bg h6 { width: 12%; height: 10%; background-image: url(../img/por_moving-27353_640.png); background-repeat: no-repeat; background-size: 100% 100%; border: 3px double rgba(80, 80, 80, 0.753); border-radius: 100%; background-color: rgba(172, 172, 172, 0.616); position: absolute; right: 3%; box-shadow: 2px 5px 5px black; bottom: 3%; opacity: 0;}
+    .s_arti1 > div > div.s_kk .s_arti1_bg1:after,
+    .s_arti1 > div > div.s_kk .s_arti1_bg2:after,
+    .s_arti1 > div > div.s_kk .s_arti1_bg3:after {transition-delay: 0.5s; opacity: 1 !important; background-size:50% 100%;}
+    .s_arti1 > div > div.s_kk .s_arti1_bg h6 {transition-delay: 1s; opacity: 1 !important;}
+    .s_arti1 > div.s_oo {flex: 3; transition: 1s; background-color: white;}
+    .s_arti1 > div.s_oo > div {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+100,f6f6f6+100,e1e1e1+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 100%, rgba(246,246,246,1) 100%, rgba(225,225,225,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 100%,rgba(246,246,246,1) 100%,rgba(225,225,225,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgb(255, 255, 255) 0%,rgb(196, 196, 196) 50%,rgb(255, 255, 255) 100%,rgba(246,246,246,1) 100%,rgba(225,225,225,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-9 */
+         transition: 1s;}
+
+
+         /* 두번째 페이지 *//* 두번째 페이지 *//* 두번째 페이지 *//* 두번째 페이지 *//* 두번째 페이지 *//* 두번째 페이지 */
+
+@media screen and (max-width:586px) {
+    .s_arti1_bg1,.s_arti1_bg2,.s_arti1_bg3 {position: relative; z-index: 1; width: 100%; height: 100%;}
+    .s_arti1_bg1:after,.s_arti1_bg2:after,.s_arti1_bg3:after {content:""; background-image:url(../img/pro_rap_img2.jpg);top:0;left:0;position:absolute;background-size:cover; opacity:0.3; filter:alpha(opacity=50); z-index:-1; width:100%; height:100%;}
+    .s_arti1_bg2:after {background-image:url(../img/pro_dry_img2.jpg); opacity: 0.8!important;}
+    .s_arti1_bg3:after {background-image:url(../img/pro_dry_img1.jpg); opacity: 0.8!important;}
+    }
+
+
+@media screen and (max-width:1200px) {
+    .s_arti1_bg1,.s_arti1_bg2,.s_arti1_bg3 {position: relative; z-index: 1; width: 100%; height: 100%;}
+    .s_arti1_bg1:after,.s_arti1_bg2:after,.s_arti1_bg3:after {content:""; background-image:url(../img/pro_rap_img2.jpg);top:0;left:0;position:absolute;background-size:cover; opacity:0.3; filter:alpha(opacity=50); z-index:-1; width:100%; height:100%;}
+    .s_arti1_bg2:after {background-image:url(../img/pro_dry_img2.jpg); opacity: 0.8!important;}
+    .s_arti1_bg3:after {background-image:url(../img/pro_dry_img1.jpg); opacity: 0.8!important;}
+    }
+
