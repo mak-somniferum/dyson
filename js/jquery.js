@@ -62,6 +62,11 @@ $(".s_arti1 > div > div").click(function(){
         $(this).addClass("s_kk")
 })
 
+$(".s_arti1 > div > div").click(function(){
+    $(".s_arti1 >div > div").removeClass("s_ll")
+        $(this).addClass("s_ll")
+})
+
 
 var swiper = new Swiper('.s_arti .swiper-container', {
     effect: 'cube',
