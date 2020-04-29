@@ -1,6 +1,6 @@
 /* common style */
 .inner {max-width:1200px; margin:0 auto;}
-.title{text-align: center;}
+.title{text-align: center; margin-top: 70px;}
 .title1{background-color: #000; color: #fff; padding: 3% 0;}
 .title2{padding: 3% 0;}
 
