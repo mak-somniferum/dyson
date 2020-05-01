@@ -14,41 +14,52 @@ $('.regi_bg_m').animate({'height':'50%'},2000)
 
 
 //customer
-$('.cust_check_box li').click(function(){
-    $('.cust_check_box').fadeOut()
-    $('.customer_box').fadeIn()
-    var idx = $(this).index()
-    $('.cust_check_text li').removeClass('on')
-    $('.cust_check_text li').eq(idx).addClass('on')
-    $('.cust_part_box li').fadeOut()
-    $('.cust_part_box li').eq(idx).fadeIn()
-})
 $('.cust_check_box li').mouseenter(function(){
     $(this).find('img').stop().animate({'width': '70%'})
 })
 $('.cust_check_box li').mouseleave(function(){
     $('.cust_check_box img').stop().animate({'width': '60%'})
 })
-$('.cust_check_text li').click(function(){
-    var idx = $(this).index()
-    $('.cust_check_text li').removeClass('on')
+
+$('.cust_check_box a').click(function(e){
+    e.preventDefault()
+    $('.cust_check_box').fadeOut()
+    $('.customer_box').fadeIn()
+    var idx = $(this).parent().index()
+    var url = $(this).attr('href')
+    var h = $(url).height()
+    $('.cust_check_text a').removeClass('on')
+    $('.cust_check_text a').eq(idx).addClass('on')
+    $('.cust_part_box li').stop().fadeOut()
+    $(url).stop().fadeIn()
+    $('.cust_part_box').stop().animate({height: 0})
+    $(url).parent().stop().animate({height: h})
+})
+$('.cust_check_text a').click(function(e){
+    e.preventDefault()
+    var url = $(this).attr('href')
+    var h = $(url).height()
+    $('.cust_check_text a').removeClass('on')
     $(this).addClass('on')
-    $('.cust_part_box li').fadeOut()
-    $('.cust_part_box li').eq(idx).fadeIn()
+    $('.cust_part_box li').stop().fadeOut()
+    $(url).stop().fadeIn()
+    $('.cust_part_box').stop().animate({height: 0})
+    $(url).parent().stop().animate({height: h})
 })
 
-$(window).resize(function(){
-    
-    if($(window).width()>1200){
-        $('.cust_part_box').height(2020)
-    }else if($(window).width()>960){
-        $('.cust_part_box').height(2580)
-    }else if($(window).width()>720){
-        $('.cust_part_box').height(3420)
-    }else{
-        $('.cust_part_box').height(4820)
-    }
-})
+    $(window).resize(function(){
+        // if(w > 1200){
+        //     $('.cust_part_box').stop().animate({height: h})
+        // }else if(w > 960){
+        //     $('.cust_part_box').stop().animate({height: h})
+        // }else if(w > 720){
+        //     $('.cust_part_box').stop().animate({height: h})
+        // }else{
+        //     $('.cust_part_box').stop().animate({height: h})
+        // }
+
+        $('.cust_part_box li').css({height: 'auto'})
+    })
 
 
 
