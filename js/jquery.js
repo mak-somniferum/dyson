@@ -7,15 +7,39 @@ $('#footer').load('footer.html')
 
 //==================================== register
 
-// $('.regi_bg_img').first().fadeOut(2000)
-// $('.regi_bg_img').last().fadeIn(2000)
-// 
-// $('.regi_bg_m').animate({'height':'50%'},2000)
+$('.regi_bg_img').first().fadeOut(2000)
+$('.regi_bg_img').last().fadeIn(2000)
+
+$('.regi_bg_m').animate({'height':'50%'},2000)
+
+$('.regi_prod').animate({'opacity':'1', bottom : '14%'},2000)
+
+$('.regi_txt').animate({'opacity': '1', top : '40%'},2000)
+$('.regi_txt_m').animate({'opacity':'1', top : '63%'},2000)
+
+$('.regi_sect2_bg .bg').first().fadeOut(2000)
+$('.regi_sect2_bg .bg').last().fadeIn(2000)
+
+
+$('.regi_go').click(function(e){
+    e.preventDefault()
+
+    $('.regi_paper').fadeIn()
+})
+
+$('.fin button').click(function(){
+    $('.regi_paper').fadeOut()
+})
+
+$('.form button').click(function(){
+    $('.form').css({'opacity':'0'})
+    $('.fin').css({'display':'block'})
+})
+
 
 
 
 //==================================== register end
-
 
 //customer
 $('.cust_check_box li').click(function(){
@@ -54,8 +78,6 @@ $(window).resize(function(){
     }
 })
 
-
-
 // promotion      // promotion      // promotion
 // promotion      // promotion      // promotion
 // promotion      // promotion      // promotion
@@ -83,6 +105,9 @@ $(".s_arti1 > div > div").click(function(){
 })
 
 
+
+// swiper
+
 var swiper = new Swiper('.s_arti .swiper-container', {
     effect: 'cube',
     grabCursor: true,
@@ -96,23 +121,10 @@ var swiper = new Swiper('.s_arti .swiper-container', {
       el: '.s_arti .swiper-pagination',
     },
   });
-//===============================responseible
 
-// windowReposive()
-// $(window).resize(function(){
-    // windowReposive()
-// })
-// function windowReposive(){
-    // var windowWidth=$(window).width()
-// 
-    // if(windowWidth >= 1200){
-        // $('.regi_txt').animate({'opacity': '1', top : '40%'},2000)
-        // $('.regi_prod').animate({bottom : '5%'},2000)
-// 
-    // }else if(windowWidth < 1200){
-        // 
-        // $('.regi_txt').animate({'opacity': '1', top : '75%'},2000)
-        // $('.regi_prod').animate({bottom : '10%'},2000)
-// 
-    // }
-// }
+  
+//   
+
+
+// responsible
+
