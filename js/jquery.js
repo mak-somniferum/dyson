@@ -2,6 +2,23 @@
 $('#header').load('header.html')
 $('#footer').load('footer.html')
 
+//==================================== main Products
+
+$('.bg_video_wrap video').first().show()
+$('.main_pro li').mouseenter(function(){
+    var i = $(this).index()
+    var mainVideo = $('.bg_video_wrap video')
+    mainVideo.get(0).pause()
+    mainVideo.get(0).currentTime = 0
+    mainVideo.fadeOut()
+
+    mainVideo.eq(i+1).fadeIn()
+    mainVideo.eq(i+1).get(0).play()
+    
+})
+
+
+
 //==================================== register
 
 $('.regi_bg_img').first().fadeOut(2000)
@@ -10,10 +27,9 @@ $('.regi_bg_img').last().fadeIn(2000)
 $('.regi_bg_m').animate({'height':'50%'},2000)
 
 
-//==================================== register end
 
+//==================================== Customer
 
-//customer
 $('.cust_check_box li').click(function(){
     $('.cust_check_box').fadeOut()
     $('.customer_box').fadeIn()
