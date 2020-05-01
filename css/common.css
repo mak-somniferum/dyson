@@ -1,12 +1,12 @@
 /* common style */
 .inner {max-width:1200px; margin:0 auto;}
-.title{text-align: center;}
+.title{text-align: center; margin-top: 70px;}
 .title1{background-color: #000; color: #fff; padding: 3% 0;}
 .title2{padding: 3% 0;}
 
 
 /* main */
-#main {padding-top:70px;}
+/* #main {padding-top:70px;} */
 
 
 /* header */
@@ -17,7 +17,7 @@
 #header h1 a {display:block; font-size:0; width:74px; height:28px; background:url('../img/logo.jpg') no-repeat; background-size:contain;}
 
 #gnb .dep1 {display:flex; margin-left:18px;}
-#gnb .dep1>li>a {display:block; padding:0 18px; font-size:17px; color:#fff; line-height:70px; transition:.4s;}
+#gnb .dep1>li>a {display:block; padding:0 18px; font-size:17px; color:#fff; line-height:70px; transition:.3s;}
 #gnb .dep1>li>a.on,
 #gnb .dep1>li>a:hover {background-color: #1a1a1a;}
 #gnb .dep2_wrap {display:none; position:absolute; left:0; top:70px; width:100%; background: #1a1a1a;}
@@ -36,7 +36,7 @@
 #gnb .dep2>li.menu_part>a {margin-right:15px;}
 #gnb .dep3 {display:flex; align-items: center;}
 #gnb .dep3 li {padding:0 15px;}
-#gnb .dep3 li a {font-size:14px; color:#bbb; transition:.4s;}
+#gnb .dep3 li a {font-size:14px; color:#bbb; transition:.3s;}
 #gnb .dep3 li a:hover {color:#fff;}
 
 .h_utill .search {display:flex; align-items: center;}
