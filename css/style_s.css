@@ -423,25 +423,7 @@
 .promotion_wrap {
   width: 100%;
   height: 100%; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
-  background: rgb(69, 72, 77); /* Old browsers */
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(
-    ellipse at center,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: black;
   position: relative;
 }
 .promotion_wrap > div {
@@ -453,25 +435,25 @@
   transform: translate(-50%, -50%);
 }
 .promotion_wrap > div h1 {
-  font-size: 5em;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px black;
-}
-.promotion_wrap > div h2 {
-  font-size: 4em;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px black;
-}
-.promotion_wrap > div h3 {
   font-size: 3em;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 }
+.promotion_wrap > div h2 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+.promotion_wrap > div h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
 .promotion_wrap > div h4 {
-  font-size: 4em;
+  font-size: 2em;
   color: white;
   text-align: center;
   text-shadow: 0px 0px 5px gray, 0px 0px 10px white;
