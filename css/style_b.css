@@ -95,18 +95,23 @@
 .cust_check_text li{
     flex: 1;
 }
-.cust_check_text li{
+.cust_check_text a{
     display: block;
     background-color: #b4b4b4;
     color: #fff;
-    padding: 2% 0;
+    padding: 20px 0;
     cursor: pointer;
 }
-.cust_check_text li.on{
+.cust_check_text a.on{
     background-color: #616161;
+}
+.cust_check_text a{
+    display: block;
+    height: 100%;
 }
 .cust_part_box{
     position: relative;
+    /* overflow: hidden; */
 }
 .cust_part_box li{
     width: 100%;
@@ -131,14 +136,8 @@
 
 }
 @media screen and (max-width: 1024px){
-    .cust_wrap{
-        height: 150vw;
-    }
-    .cust_check_box{
-        height: 100vw;
-    }
     .cust_check_box li{
-        height: 50%;
+        height: 50vw;
     }
     .cust_check_box li a{
         width: 100%;
