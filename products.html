@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" conten="width=device-width, initial-scale=1.0">
     <title>Dyson KR - 제품</title>
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -117,16 +118,17 @@
                     </div>
                     <!-- cordfree7 -->
 
-                    <div class="thum_wrap">
-                        <ul>
-                            <li><a href="#cordfree1"><img src="img/cordfree1_1.png" alt=""><span class="name">다이슨 V11 220 에어와트 CF+</span></a></li>
-                            <li><a href="#cordfree2"><img src="img/cordfree1_2.png" alt=""><span class="name">다이슨 V11 토탈 클린</span></a></li>
-                            <li><a href="#cordfree3"><img src="img/cordfree1_3.png" alt=""><span class="name">다이슨 V11 플러피</span></a></li>
-                            <li><a href="#cordfree4"><img src="img/cordfree1_4.png" alt=""><span class="name">다이슨 V10 카본 파이버</span></a></li>
-                            <li><a href="#cordfree5"><img src="img/cordfree1_5.png" alt=""><span class="name">다이슨 V8 플러피</span></a></li>
-                            <li><a href="#cordfree6"><img src="img/cordfree1_6.png" alt=""><span class="name">다이슨 V8 앱솔루트</span></a></li>
-                            <li><a href="#cordfree7"><img src="img/cordfree1_7.png" alt=""><span class="name">다이슨 V8 슬림 플러피+</span></a></li>
-                        </ul>
+                    <div class="swiper-container thum_wrap thum1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#cordfree1"><span><img src="img/cordfree1_1.png" alt=""></span><em>다이슨 V11 220 에어와트 CF+</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree2"><span><img src="img/cordfree1_2.png" alt=""></span><em>다이슨 V11 토탈 클린</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree3"><span><img src="img/cordfree1_3.png" alt=""></span><em>다이슨 V11 플러피</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree4"><span><img src="img/cordfree1_4.png" alt=""></span><em>다이슨 V10 카본 파이버</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree5"><span><img src="img/cordfree1_5.png" alt=""></span><em>다이슨 V8 플러피</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree6"><span><img src="img/cordfree1_6.png" alt=""></span><em>다이슨 V8 앱솔루트</em></a></div>
+                            <div class="swiper-slide"><a href="#cordfree7"><span><img src="img/cordfree1_7.png" alt=""></span><em>다이슨 V8 슬림 플러피+</em></a></div>
+                        </div>
+                        <div class="cover"></div>
                     </div>
                 </div>
                 <!-- inner -->
@@ -175,6 +177,16 @@
     <footer id="footer"></footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/jquery.js"></script>
+
+    <script>
+    var swiper = new Swiper('.thum1', {
+        direction: 'vertical',
+        slidesPerView: 6,
+        spaceBetween: 0,
+        mousewheel: true,
+    });
+    </script>
 </body>
 </html>
