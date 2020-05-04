@@ -1,8 +1,8 @@
 /* common style */
 .inner {max-width:1200px; margin:0 auto;}
 .title{text-align: center; margin-top: 70px;}
-.title1{background-color: #000; color: #fff; padding: 3% 0;}
-.title2{padding: 3% 0;}
+.title1{background-color: #000; color: #fff; font-size:32px; padding: 40px 0;}
+.title2{padding: 25px 0;}
 
 
 /* main */
@@ -20,7 +20,7 @@
 #gnb .dep1>li>a {display:block; padding:0 18px; font-size:17px; color:#fff; line-height:70px; transition:.3s;}
 #gnb .dep1>li>a.on,
 #gnb .dep1>li>a:hover {background-color: #1a1a1a;}
-#gnb .dep2_wrap {display:none; position:absolute; left:0; top:70px; width:100%; background: #1a1a1a;}
+#gnb .dep2_wrap {display:none; position:absolute; left:0; top:70px; z-index:10000; width:100%; background: #1a1a1a;}
 #gnb .dep2_wrap.on {display:block;}
 #gnb .dep2 {display:flex; flex-wrap:wrap; max-width:1200px; margin:0 auto; padding: 15px;}
 #gnb .dep2>li {width:25%; padding-right:15px;}
@@ -64,11 +64,17 @@
     #footer .inner {padding:0 5%;}
 }
 @media (max-width:1024px){
+    .title1 {padding: 30px 0;}
+    .title2 {padding: 20px 0;}
+
     #header .inner {display:block;}
     #header .inner>div.h_utill {display:none;}
     #header .inner>div {justify-content: space-between;}
 }
 @media (max-width:768px){
+    .title1 {font-size:25px;}
+    .title2 {font-size:20px;}
+
     #header .inner {display:flex;}
     #header .inner>div.m_menu_btn {display:block; width:30px; cursor: pointer;}
     #header .m_menu_btn span {opacity:1; display:block; height:1px; background:#fff; margin-bottom:8px; transition:.4s;}

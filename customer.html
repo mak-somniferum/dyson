@@ -16,36 +16,36 @@
     <div class="inner cust_wrap">
         <ul class="cust_check_box">
             <li>
-                <a href="#"><img src="img/magento-248n-primary.png" alt="" class="cust_img">
+                <a href="#cust_vacuum"><img src="img/magento-248n-primary.png" alt="" class="cust_img">
                 <p class="cust_text">청소기</p></a>
             </li>
             <li>
-                <a href="#"><img src="img/Supersonic-Iron-Fuchsia-image-hero.png" alt="" class="cust_img">
+                <a href="#cust_dryer"><img src="img/Supersonic-Iron-Fuchsia-image-hero.png" alt="" class="cust_img">
                 <p class="cust_text">헤어케어</p></a>
             </li>
             <li>
-                <a href="#"><img src="img/magento-527B_0_Primary_ 800x1200_template.png" alt="" class="cust_img">
+                <a href="#cust_purifier"><img src="img/magento-527B_0_Primary_ 800x1200_template.png" alt="" class="cust_img">
                 <p class="cust_text">공기청전기</p></a>
             </li>
             <li>
-                <a href="#"><img src="img/white-silver-floor-primary.png" alt="" class="cust_img">
+                <a href="#cust_lighting"><img src="img/primary-short-desk-white-variant_2.png" alt="" class="cust_img">
                 <p class="cust_text">조명</p></a>
             </li>
             <li>
-                <a href="#"><img src="img/63B24F19ABD3414DBDC1E32A177E2F2C.jpg" alt="" class="cust_img">
+                <a href="#cust_etc"><img src="img/63B24F19ABD3414DBDC1E32A177E2F2C.jpg" alt="" class="cust_img">
                 <p class="cust_text">ETC</p></a>
             </li>
         </ul>
         <div class="customer_box">
             <ul class="cust_check_text">
-                <li class="on">청소기</li>
-                <li>헤어케어</li>
-                <li>공기청전기</li>
-                <li>조명</li>
-                <li>기타</li>
+                <li><a href="#cust_vacuum">청소기</a></li>
+                <li><a href="#cust_dryer">헤어케어</a></li>
+                <li><a href="#cust_purifier">공기청전기</a></li>
+                <li><a href="#cust_lighting">조명</a></li>
+                <li><a href="#cust_etc">기타</a></li>
             </ul>
             <ul class="cust_part_box">
-                <li class="cust_vacuum">
+                <li id="cust_vacuum">
                     <div class="cust_part">
                         <img src="img/Dyson_DC35_Multi_Floor_Vacuum_Cleaner.jpg" alt="" class="cust_img">
                         <p class="cust_text2">DC35 Multi Floor</p>
@@ -183,7 +183,7 @@
                         <p class="cust_text2">Dyson Big Ball™</p>
                     </div>
                 </li>
-                <li class="cust_dryer">
+                <li id="cust_dryer">
                     <div class="cust_part">
                         <img src="img/AC5BE1D6FBE54FEA894E78B92B3B1B9D.png" alt="" class="cust_img">
                         <p class="cust_text2">다이슨 슈퍼소닉™ 아이언/퓨시아</p>
@@ -193,7 +193,7 @@
                         <p class="cust_text2">다이슨 에어랩™ 스무드 앤 컨트롤</p>
                     </div>
                 </li>
-                <li class="cust_purifier">
+                <li id="cust_purifier">
                     <div class="cust_part">
                         <img src="img/PureCool_Browse_The_Range_White_Silver.jpg" alt="" class="cust_img">
                         <p class="cust_text2">Dyson Pure Cool Tower Fan</p>
@@ -271,7 +271,7 @@
                         <p class="cust_text2">다이슨 가습기</p>
                     </div>
                 </li>
-                <li class="cust_Lighting">
+                <li id="cust_lighting">
                     <div class="cust_part">
                         <img src="img/CD05_BLACK_HERO.jpg" alt="" class="cust_img">
                         <p class="cust_text2">라이트 싸이클™ 조명 데스크형</p>
@@ -281,7 +281,7 @@
                         <p class="cust_text2">라이트 싸이클™ 조명 플로어스탠드형</p>
                     </div>
                 </li>
-                <li class="cust_etc">
+                <li id="cust_etc">
                     <div class="cust_part">
                         <img src="img/280_Hero_378x420.jpg" alt="" class="cust_img">
                         <p class="cust_text2">Dyson Airblade 9kJ</p>
@@ -303,12 +303,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.js"></script>
-    <script>
-   $('.cust_part_box li').each(function(i){
-        var h = $(this).height()
-        console.log(h)
-    })
-
-    </script>
   </body>
 </html>

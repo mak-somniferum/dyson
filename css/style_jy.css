@@ -9,12 +9,14 @@
     height: 60vh;
     background-color: #000;
     color: #fff;
-    text-align: center;position: relative;
+    text-align: center;
+    position: relative;
 }
 
 .regi_bg{
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .regi_bg_img{
     height: 100%;
@@ -31,7 +33,7 @@
     opacity: 0;
 }
 .regi_prod{
-    opacity: 0;
+    display: none;
 }
 .regi_txt{
     position: absolute;
@@ -41,6 +43,16 @@
     opacity: 0;
     font-size: 1vw;
 }
+.regi_txt_m{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    font-size: 1vw;
+}
+
+
 .regi_txt h2{
     margin: 15px;
 }
@@ -82,13 +94,24 @@
         left: 50%;
         transform: translate(-50%,-50%);
         width: 15%;
-        opacity: 1;
+        display: block;
+        opacity: 0;
     }
+    
+
     .regi_txt{
+        display: none;
+    }
+    .regi_txt_m{
+        width: 100%;
+        display: block;
+        font-size: 1.5vw;
         top: 85%;
         left: 50%;
-        font-size: 1.4vw;
+        opacity: 0;
     }
+
+
   }
 
 /*******************main mobile ********************/
@@ -97,43 +120,46 @@
 
     .regi_prod{
         width: 25%;
-        bottom: -20%;
+        bottom: 0%;
     }
     .regi_bg_m img{
         width: 60%;
         bottom: 0;
     }
-    .regi_txt{
-        width: 100%;
-        top: 85%;
-        left: 50%;
+    .regi_txt_m{
         font-size: 2.5vw;
     }
-
+  
+    .regi_prod img{
+        width: 80%;
+    }
 
   }
 
 
-
+/******************************************/
 /*************** sub page *****************/
 
 
 
 .regi_wrap{
     width: 60%;
-    
     margin: auto;
     border: 1px solid blue;
 }
 
 .regi_sect{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     border: 1px solid #000;
 }
-
+.regi_sect2{
+    position: relative;
+}
 /************* section1 ****************/
-
+.regi_sect1{
+    padding-top: 70px;
+}
 .regi_sect1_wrap{
     height: 80%;
     display: flex;
@@ -143,29 +169,28 @@
 }
 .regi_sect1 h1{
     height: 20%;
-    border: 1px solid #000;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .why{
     width: 80%;
-    border: 1px solid red;
+
 }
 .why img{
     width: 100%;
-    border: 1px solid #000;
-}
 
+}
 .why_txt{
     width: 80%;
     height: 50%;
-    border: 1px solid #000;
+
 }
 .why_txt li{
     width: 25%;
     height: 100%;
-    border: 1px solid #000;
+
     float: left;
     padding: 2%;
     text-align: center;
@@ -176,54 +201,157 @@
 }
 
 /**************** section2 ******************/
-
-.regi_sect2_wrap{
-    height: 100%;
-}
 .regi_sect2_title{
     width: 100%;
-    height: 25%;
+    height: 30%;
     background-color: #231f20;
-    color: #fff;
-    border: 1px solid red;
-    
-}
-.row_box{
-    width: 50px;
-    height: 50px;
-    background-color: #231f20;
-    position: absolute;
-    left: 49%;
-    top: 97%;
-    transform: translate(-50%,-50%);
-    transform: rotate(45deg);
-    z-index: 1;
- 
 }
 .regi_sect2_title h1{
     width: 50%;
     height: 100%;
     border: 1px solid #fff;
+    color: #fff;
     float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .regi_sect2_title img{
     width: 50%;
-    height: 100%;
-    float: right;
-    border: 1px solid red;
-    
+    border: 1px solid #fff;
 }
-.regi_sect2_con{
+.regi_sect2_bg{
     width: 100%;
-    height: 75%;
-    border: 1px solid #000;
-    background-image: url(/img/regi_sect2_bg1.jpg);
-    background-size: contain;
+    height: 70%;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+}
+.regi_sect2_bg .bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
 }
 
+.regi_sect2_bg .bg:nth-child(2){
+    display: none;
+}
+.regi_sect2_bg .box_wrap{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.regi_sect2_bg .box{
+    width: 200px;
+    height: 250px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: relative;
+    opacity: 1;
+}
+.regi_sect2_bg .box img{
+    position: absolute;
+    width: 80%;
+    top: 5%;
+    left: 10%;
+}
+.regi_sect2_bg .box p{
+    bottom: 10%;
+    left: 35%;
+    position: absolute;
+}
+
+/******* input tag ******/
+
+.regi_paper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    width: 25%;
+    height: 70%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px 8px rgba(0,0,0,0.5);
+    font-size: 16px;
+    text-align: center;
+    display: none;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form h2{
+    padding: 15px;
+}
+.form h3{
+    padding: 10px;
+}
+.form button, .fin button{
+    width: 150px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    margin: 10px;
+}
+.fin{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.fin_wrap{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+
+}
+.fin img{
+    width: 15%;
+
+}
+.fin p{
+    font-size: 1.3vw;
+
+}
+.field{
+    width: 100%;
+    height: 60px;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    padding: 10px;
+}
+.field p{
+    position: absolute;
+    top: -3px;
+    left: 25px;
+    background-color: #fff;
+}
+.half{
+    width: 50%;    
+    justify-content: center;
+}
+input{
+    width: 100%;
+    height: 100%;
+}
 /*************sub tablet ****************/
 
 @media only screen and (max-width: 1200px) {
@@ -235,6 +363,12 @@
     }
     .regi_sect1 ul li{
         font-size: 1.5vw;
+    }
+    .regi_paper{
+
+        width: 45%;
+        height: 80%;
+
     }
   }
 
@@ -259,9 +393,6 @@
         margin: 3%;
         border: 2px solid #ccc;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .regi_sect1_m .img_box img{
         width: 70%;
@@ -278,5 +409,19 @@
     .regi_sect1_desk{
         display: none;
     }
+    .regi_sect2_title{
+        height: 15%;
+        text-align: center;
+    }
+    .regi_sect2_title img{
+        opacity: 0;
+    }
+    .regi_sect2_bg{
+        height: 85%;
+    }
 
+ 
+
+
+ 
   }
