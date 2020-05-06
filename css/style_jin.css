@@ -1,38 +1,80 @@
 /* main */
 #main .products {height:100vh; padding-top:70px; position: relative; overflow: hidden;}
-#main .products .dim {width:100%; height:100%; position:absolute; left:0; top:0; background: linear-gradient(to top, rgba(0,0,0,1) 15%,rgba(0,0,0,0) 100%); z-index:1;}
-#main .products .bg_video {min-width:100%; min-height:100%; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); z-index:0;}
+#main .products .dim {width:100%; height:100%; position:absolute; left:0; top:0; background: linear-gradient(to top, rgba(0,0,0,1) 3%,rgba(0,0,0,0) 50%); z-index:1;}
+#main .products .bg_video_wrap video {display:none; min-width:100%; min-height:100%; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); z-index:0;}
 
-.main_pro {display:flex; flex-flow:row wrap; position:absolute; left:0; bottom:0; z-index:2; width:100%;}
-.main_pro li {flex:1 0 auto; width:20%; opacity:.6; transition:.4s;}
-.main_pro li:hover {width:80%;}
-.main_pro li a {display:block; padding:20px 5% 50px; font-size:13px; text-align:center; color:#fff; position:relative;}
-.main_pro li a video {opacity:0; position:absolute; left:50%; top:0; transform: translate(-50%, 0); min-width:100%; min-height:100%; transition:.4s;}
-.main_pro li:hover a video {opacity:1;}
+.main_pro {display:flex; align-items:flex-end; height:100%; position:absolute; left:0; top:0; z-index:2; width:100%;}
+.main_pro li {flex:1 1 auto; width:20%; opacity:.6; transition:.4s;}
+.main_pro li:hover {width:80%; opacity:1;}
+.main_pro li a {display:block; padding:20px 5% 50px; font-size:13px; text-align:center; color:#fff; transition:.4s;}
+.main_pro li a span,
+.main_pro li a em {position: relative; z-index:100;}
 .main_pro li a span {display:block; margin-bottom:40px;}
-.main_pro li a span img {max-height:240px; transition:.4s;}
+.main_pro li a span img {max-height:180px; transition:.4s;}
+.main_pro li:hover a {font-size:20px;}
+.main_pro li:hover a span img {max-height:240px;}
+/* .main_pro li a video {display:none; opacity:0; position:absolute; left:50%; top:0; z-index:50; transform: translate(-50%, 0); min-width:100%; min-height:100%; transition:.4s;}
+.main_pro li:hover a video {opacity:1;} */
 
+
+/* sub Products */
+.products_map {position:sticky; top:70px; z-index:1000; width:100%; background:#fff; border-bottom:1px solid #ddd; text-align:center;}
+.products_map ul {display:flex; height:40px; justify-content: center; align-items:center;}
+.products_map ul li a {display:inline-block; font-size:13px; color:#666; padding:0 10px;}
+.products_map ul li::before {content:'·'; display:inline-block;}
+.products_map ul li:first-child::before {display:none;}
+.products_map ul li a.on {color:#111; font-weight:bold;}
+
+.pro_conts {height:700px; border-bottom:1px solid red; background:url('../img/pro_conts_gra_bg.jpg') repeat-x;}
+.pro_conts .inner {position:relative;}
+
+.pro_info {opacity:0; display:flex; justify-content: space-between; align-items: center; height:700px; letter-spacing: -0.14em; position:absolute; left:0; top:0; width:100%;}
+.pro_info:first-child {opacity:1;}
+.pro_info .info {width:55%; padding-left:20px;}
+.pro_info .img {width:45%;}
+.pro_info .imgName {font-size:40px; line-height:1; margin-bottom:30px;}
+.pro_info .imgName span {display:block;}
+.pro_info .imgName span img {height:25px;}
+.pro_info .imgName.big span img {height:55px;}
+.pro_info .txt {font-size:25px; line-height:40px; margin-bottom:25px;}
+.pro_info .price strong {display:inline-block; margin-right:10px; font-size:50px; font-weight:900;}
+.pro_info .price strong .won {font-size:45px;}
+.pro_info .price .normal {font-size:25px; color:#999; text-decoration: line-through;}
+.pro_info .price .normal .won {font-size:23px; color:inherit;}
+
+.pro_conts .thum_wrap {position:absolute; right:0; top:0; width:80px; height:600px; overflow-x:visible;}
+.pro_conts .thum_wrap .swiper-slide {margin-bottom:20px;}
+.pro_conts .thum_wrap .swiper-slide a {display:block; position:relative; font-size:11px;}
+.pro_conts .thum_wrap .swiper-slide a span {display:block; border-radius:50%; border:1px solid #ddd; width:80px; height:80px; overflow:hidden;}
+.pro_conts .thum_wrap .swiper-slide a span img {transform: translate(15%, -50%);}
+.pro_conts .thum_wrap .swiper-slide a em {display:block; position:absolute; left:50%; bottom:-18px; transform:translateX(-50%); width:200%; text-align:center; color:#666;}
+
+.pro_conts .thum_wrap .cover {position:absolute; right:0; top:0; width:100%; height:100%; background:url('../img/gradation.png') no-repeat; background-size:100% 100%;}
 
 
 @media (max-width:1200px){
     
 }
 @media (max-width:1024px){
-    .main_pro li a span img {max-height:120px;}
+    .main_pro li a span img {max-height:110px;}
 }
 @media (max-width:768px){
     #main .products {height:auto; line-height:0;}
     #main .products::before {display:none;}
     #main .products .bg_video {width:100%; height:auto; position: static; transform: translate(0, 0);}
-    .main_pro {position:relative; left:0; top:0; background: #000; border-top:1px solid #1d1d1d;}
+    .main_pro {flex-wrap:wrap; position:relative; left:0; top:0; background: #000; border-top:1px solid #1d1d1d;}
     .main_pro li {opacity:1; width:50%; border-bottom:1px solid #1d1d1d; border-right:1px solid #1d1d1d;}
+    .main_pro li:hover {width:50%;}
     .main_pro li.newPro {width:100%;}
     .main_pro li.newPro a {display:flex; flex-direction: row-reverse; justify-content: center; align-items: center; font-size:1.1rem; line-height:1.5;}
     .main_pro li.newPro a span {margin-bottom:0;}
     .main_pro li:nth-child(odd) {border-right:none;}
     .main_pro li a {padding:30px 5%;}
+    .main_pro li:hover a {font-size:13px;}
+    .main_pro li a video {display:none;}
     .main_pro li a span {margin-bottom:20px;}
-    .main_pro li a span img {max-height:80px;}
+    .main_pro li a span img,
+    .main_pro li:hover a span img {max-height:80px;}
 }
 @media (max-width:500px){
     
