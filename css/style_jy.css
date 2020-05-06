@@ -1,7 +1,11 @@
 *{
     box-sizing: border-box;
 }
-
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*************** main page *****************/
 
 .register{
@@ -145,13 +149,10 @@
 .regi_wrap{
     width: 60%;
     margin: auto;
-    border: 1px solid blue;
 }
-
 .regi_sect{
     width: 100%;
     height: 90vh;
-    border: 1px solid #000;
 }
 .regi_sect2{
     position: relative;
@@ -160,67 +161,68 @@
 .regi_sect1{
     padding-top: 70px;
 }
-.regi_sect1_wrap{
+
+.regi_wrap{
     height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .regi_sect1 h1{
     height: 20%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .why{
     width: 80%;
-
 }
 .why img{
     width: 100%;
-
 }
 .why_txt{
     width: 80%;
     height: 50%;
-
 }
 .why_txt li{
+    border: 1px solid #000;
     width: 25%;
     height: 100%;
-
     float: left;
-    padding: 2%;
+    padding: 10px;
     text-align: center;
-    font-size: 1vw;
+    font-size: 0.9vw;
+    
 }
 .regi_sect1_m{
     display: none;
 }
 
 /**************** section2 ******************/
+
 .regi_sect2_title{
     width: 100%;
     height: 30%;
     background-color: #231f20;
 }
-.regi_sect2_title h1{
+.regi_sect2_title .regi_wrap{
+    height: 100%;
+}
+.tit{
     width: 50%;
     height: 100%;
-    border: 1px solid #fff;
     color: #fff;
+    font-size: 1vw;
+}
+.tit:first-child{
     float: left;
 }
-.regi_sect2_title img{
-    width: 50%;
-    border: 1px solid #fff;
+.tit:last-child{
+    float: right;
+    position: relative;
+}
+.tit:last-child img{
+    position: absolute;
+    bottom: 0;
 }
 .regi_sect2_bg{
     width: 100%;
     height: 70%;
-    border: 1px solid red;
     position: relative;
     overflow: hidden;
 }
@@ -230,7 +232,6 @@
     width: 100%;
     z-index: 1;
 }
-
 .regi_sect2_bg .bg:nth-child(2){
     display: none;
 }
@@ -247,8 +248,9 @@
     justify-content: space-evenly;
 }
 .regi_sect2_bg .box{
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
     position: relative;
@@ -274,8 +276,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 9999;
-    width: 25%;
-    height: 70%;
+    width: 470px;
+    height: 620px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 5px 10px 8px rgba(0,0,0,0.5);
@@ -287,10 +289,10 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    border: 1px solid #000;
     position: absolute;
     left: 0;
     top: 0;
+    padding: 10px;
 }
 .form h2{
     padding: 15px;
@@ -308,7 +310,6 @@
 .fin{
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
     position: absolute;
     left: 0;
     top: 0;
@@ -318,15 +319,12 @@
     width: 100%;
     position: absolute;
     top: 35%;
-
 }
 .fin img{
     width: 15%;
-
 }
 .fin p{
     font-size: 1.3vw;
-
 }
 .field{
     width: 100%;
@@ -357,19 +355,27 @@ input{
 @media only screen and (max-width: 1200px) {
     .regi_wrap{
         width: 100%;
-        height: 80%;
-        margin: auto;
-        border: 1px solid blue;
     }
-    .regi_sect1 ul li{
-        font-size: 1.5vw;
+    .tit{
+        font-size: 1.2vw;
     }
-    .regi_paper{
+    .fin p{
+        font-size: 2.5vw;
+    }
+    .regi_sect1 .regi_wrap{
+        padding: 5%;
+    } 
+    .why{
+        width: 100%;
+    }
+    .why_txt{
+        width: 90%;
+        height: 100%;
+    }
+    .why_txt li{
+        font-size: 1.7vw;
+    }
 
-        width: 45%;
-        height: 80%;
-
-    }
   }
 
 /*************sub mobile ****************/
@@ -378,15 +384,14 @@ input{
     .regi_sect1_m{
         width: 100%;
         height: 100%;
-        border: 1px solid #000;
         display: block;
     }
     .regi_sect1_m li{
         height: 25%;
-        border: 1px solid #000;
         display: flex;
         align-items: center;
     }
+
     .regi_sect1_m .img_box{
         height: 90px;
         width: 90px;
@@ -397,14 +402,14 @@ input{
     .regi_sect1_m .img_box img{
         width: 70%;
     }
-    .regi_sect1 p{
+    .regi_sect1_m .txt{
         width: 75%;
         height: 90%;
-        border: 1px solid #000;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         padding: 2%;
-        font-size: 4vw;
+        font-size: 2.6vw;
+
     }
     .regi_sect1_desk{
         display: none;
@@ -413,12 +418,17 @@ input{
         height: 15%;
         text-align: center;
     }
-    .regi_sect2_title img{
-        opacity: 0;
+    .tit:first-child{
+        width: 100%;
+        font-size: 2vw;
+    }
+    .tit:last-child{
+        display: none;
     }
     .regi_sect2_bg{
-        height: 85%;
+      height: 85%;
     }
+
 
  
 
