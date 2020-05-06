@@ -149,6 +149,7 @@ $(".s_arti1 > div > div").click(function(){
 $(".s_arti1 > div > div").click(function(){
     $(".s_arti1 > div > div").removeClass("s_kk")
         $(this).addClass("s_kk")
+
 })
 
 $(".s_arti1 > div > div").click(function(){

@@ -1,20 +1,29 @@
 /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */
-
-.s_arti0,
-.s_arti {
-  width: 100%;
-  height: 100vh;
+.s_content_wrap {
+  width: 99vw;
+  margin-top: 70px;
+  
 }
 
+.s_arti {
+  width: 100vw;
+  height: 100vh;
+  margin-left: -30%;
+}
+
+article {
+  width: 1200px;
+  height: 100vh;
+}
 .s_arti1 {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../img/star-2720923_1920.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(../img/star-2720923_1920.jpg);
+  background-repeat: no-repeat; */
+
   overflow: hidden;
 }
 .s_arti1 > div {
-  border: 1px solid rgb(255, 255, 255);
   height: 50%;
   color: black;
   font-size: 30px;
@@ -24,30 +33,49 @@
 .s_arti1 > div > div {
   width: 100%;
   height: 100%;
-  background-color: rgba(216, 216, 216, 0.5);
+  background-color: rgba(235, 235, 235, 0.5);
 }
-.s_arti1 > div > div:hover {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
-  background: rgb(69, 72, 77); /* Old browsers */
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(69, 72, 77, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(69, 72, 77, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(
-    ellipse at center,
-    rgba(69, 72, 77, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.s_song1 {
+  background-image: url(../img/pro_dry_img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.s_song2 {
+  background-image: url(../img/pro_dry_img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s_song3 {
+  background-image: url(../img/pro_rap_img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s_song4 {
+  background-image: url(../img/pro_rap_img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s_song1.s_kk {
+  background: url(../img/pro_dry_img0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.s_song2.s_kk {
+  background: url(../img/pro_dry_img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.s_song3.s_kk {
+  background: url(../img/pro_rap_img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.s_song4.s_kk {
+  background: url(../img/pro_rap_img0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .s_arti1 > div > div p {
   display: flex;
   justify-content: center;
@@ -55,13 +83,14 @@
   font-weight: bold;
   padding-top: 9%;
   color: white;
-  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.712);
+  text-shadow: 2px 2px 3px black;
 }
 .s_arti1 > div > div.s_pp p {
   color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 2px 2px 3px black;
   transition: 1s;
 }
+
 .s_arti1_bg1,
 .s_arti1_bg2,
 .s_arti1_bg3,
@@ -70,8 +99,10 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
-.s_arti1_bg1:after,
+
+/* .s_arti1_bg1:after,
 .s_arti1_bg2:after,
 .s_arti1_bg3:after,
 .s_arti1_bg4:after {
@@ -81,12 +112,12 @@
   position: absolute;
   background-size: 50% 100%;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.1;
   filter: alpha(opacity=50);
   z-index: -1;
   width: 100%;
   height: 100%;
-}
+} */
 
 .s_arti1_bg h6 {
   width: 8.5%;
@@ -103,45 +134,23 @@
   bottom: 3%;
   opacity: 0;
 }
-.s_arti1 > div > div.s_kk .s_arti1_bg1:after,
+/* .s_arti1 > div > div.s_kk .s_arti1_bg1:after,
 .s_arti1 > div > div.s_kk .s_arti1_bg2:after,
 .s_arti1 > div > div.s_kk .s_arti1_bg3:after,
 .s_arti1 > div > div.s_kk .s_arti1_bg4:after {
-  transition-delay: 0.5s;
-  opacity: 1 !important;
+  transition-delay: 0.2s;
+  opacity: 0.2 !important;
   background-size: 100% 100%;
+} */
+.s_arti1 > div > div.s_kk {
+  background-color: black;
 }
+
 .s_arti1 > div > div.s_kk .s_flex img,
 .s_arti1 > div > div.s_kk .s_arti1_bg h6 {
   transition-delay: 1s;
   transition: 2s;
   opacity: 0.9 !important;
-}
-.s_arti1 > div.s_oo {
-  transition: 1s;
-  background-color: white;
-}
-.s_arti1 > div.s_oo > div {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
-  background: rgb(69, 72, 77); /* Old browsers */
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(
-    ellipse at center,
-    rgb(117, 119, 122) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .s_flex {
@@ -193,16 +202,67 @@
 
 .s_arti {
   position: relative;
-  overflow: hidden;
-  box-shadow: 1px 1px 3px inset gray;
 }
 
-.s_position1 {
-  width: 50vw;
-  height: 50vh;
-  transform: rotate(-40deg);
-  border: 1px solid #000;
-  margin: -150px 0 0 -350px;
+.s_arti2 {
+  margin-top: 0vh;
+}
+.s_arti2,
+.s_arti3,
+.s_arti4,
+.s_arti5 {
+  box-shadow: 0px 15vh 70px rgba(211, 210, 210, 0.37);
+}
+
+.s_left_txt {
+  position: absolute;
+  left: -65%;
+  top: 5%;
+  width: 75%;
+}
+.s_left_txt h1 {
+  font-size: 3em;
+}
+.s_left_txt h3 {
+  color: gray;
+}
+
+.s_left_txt h4 {
+  font-size: 2em;
+  color: #4b88c5;
+  font-weight: 200;
+}
+
+.s_left_txt h5 {
+  font-size: 3em;
+  color: #0066cc;
+}
+
+.s_right_txt {
+  position: absolute;
+  right: -75%;
+  top: 12%;
+  width: 90%;
+}
+
+.s_right_txt h4 {
+  font-size: 1.3em;
+  padding: 1%;
+}
+
+.s_right_txt h6 {
+  font-size: 1.2em;
+  color: gray;
+  padding: 1%;
+}
+.s_right_txt ul li {
+  list-style-type: disc;
+}
+.s_left_txt2,
+.s_left_txt2-1,
+.s_left_txt3,
+.s_left_txt3-1 {
+  display: none;
 }
 
 @media screen and (max-width: 586px) {
@@ -430,38 +490,43 @@
   width: 60vw;
   height: 60vh;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .promotion_wrap > div h1 {
-  font-size: 3em;
+  font-size: 24px;
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 4px black;
+  margin-bottom: 40px;
+  /* text-shadow: 2px 2px 4px black; */
 }
 .promotion_wrap > div h2 {
-  font-size: 2em;
+  font-size: 18px;
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 4px black;
+  /* text-shadow: 2px 2px 4px black; */
+  font-weight: 100;
 }
 .promotion_wrap > div h3 {
-  font-size: 1em;
+  font-size: 20px;
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 4px black;
+  /* text-shadow: 2px 2px 4px black; */
+  font-weight: 100;
 }
 .promotion_wrap > div h4 {
-  font-size: 2em;
   color: white;
+  font-size: 18px;
   text-align: center;
-  text-shadow: 0px 0px 5px gray, 0px 0px 10px white;
-  border: 5px outset lightgray;
-  width: 40%;
-  height: 40%;
+  /* text-shadow: 0px 0px 5px gray, 0px 0px 10px white; */
+  border: 1px solid lightgray;
+  width: 16%;
   margin: 50px auto;
+  cursor: pointer;
+  padding: 1%;
 }
+
 .promotion_wrap > img {
   position: absolute;
   left: 0;
