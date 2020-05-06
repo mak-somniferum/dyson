@@ -1,13 +1,20 @@
 /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */
 .s_content_wrap {
+  width: 99vw;
   margin-top: 70px;
-}
-.s_arti0,
-.s_arti {
-  width: 100%;
-  height: 100vh;
+  
 }
 
+.s_arti {
+  width: 100vw;
+  height: 100vh;
+  margin-left: -30%;
+}
+
+article {
+  width: 1200px;
+  height: 100vh;
+}
 .s_arti1 {
   display: flex;
   flex-wrap: wrap;
@@ -209,22 +216,53 @@
 
 .s_left_txt {
   position: absolute;
-  left: -30%;
-  top: 10%;
-  width: 50%;
+  left: -65%;
+  top: 5%;
+  width: 75%;
+}
+.s_left_txt h1 {
+  font-size: 3em;
 }
 .s_left_txt h3 {
   color: gray;
 }
+
+.s_left_txt h4 {
+  font-size: 2em;
+  color: #4b88c5;
+  font-weight: 200;
+}
+
+.s_left_txt h5 {
+  font-size: 3em;
+  color: #0066cc;
+}
+
 .s_right_txt {
   position: absolute;
-  right: -40%;
-  top: 10%;
-  width: 60%;
+  right: -75%;
+  top: 12%;
+  width: 90%;
 }
+
+.s_right_txt h4 {
+  font-size: 1.3em;
+  padding: 1%;
+}
+
 .s_right_txt h6 {
-  font-size: 14px;
+  font-size: 1.2em;
   color: gray;
+  padding: 1%;
+}
+.s_right_txt ul li {
+  list-style-type: disc;
+}
+.s_left_txt2,
+.s_left_txt2-1,
+.s_left_txt3,
+.s_left_txt3-1 {
+  display: none;
 }
 
 @media screen and (max-width: 586px) {
@@ -478,15 +516,17 @@
   font-weight: 100;
 }
 .promotion_wrap > div h4 {
-  font-size: 20px;
   color: white;
+  font-size: 18px;
   text-align: center;
   /* text-shadow: 0px 0px 5px gray, 0px 0px 10px white; */
   border: 1px solid lightgray;
-  width: 25%;
+  width: 16%;
   margin: 50px auto;
   cursor: pointer;
+  padding: 1%;
 }
+
 .promotion_wrap > img {
   position: absolute;
   left: 0;
