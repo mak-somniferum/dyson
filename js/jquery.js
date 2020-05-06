@@ -42,13 +42,19 @@ $('.regi_go').click(function(e){
 })
 
 $('.fin button').click(function(){
-    $('.regi_paper').fadeOut()
+    $('.regi_paper').fadeOut(function(){
+     $('.fin').css({'display':'none'})
+    $('.form').css({'display':'block'})   
+    })
+    
 })
 
 $('.form button').click(function(){
-    $('.form').css({'opacity':'0'})
+    $('.form').css({'display':'none'})
     $('.fin').css({'display':'block'})
 })
+
+
 
 
 
