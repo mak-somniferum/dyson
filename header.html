@@ -4,7 +4,6 @@
 
         <nav id="gnb">
             <ul class="dep1">
-                <li><a href="promotions.html">프로모션</a></li>
                 <li><a href="products.html">제품</a>
                     <div class="dep2_wrap">
                         <ul class="dep2">
@@ -22,6 +21,7 @@
                         </ul>
                     </div>
                 </li>
+                <li><a href="promotions.html">프로모션</a></li>
                 <li><a href="register.html">제품등록</a></li>
                 <li><a href="customer.html">고객지원</a></li>
             </ul>
@@ -58,7 +58,7 @@
          }
      })
      var mBtnDep2 = 0
-     $('#gnb .dep1>li:nth-child(2)>a').click(function(e){
+     $('#gnb .dep1>li:nth-child(1)>a').click(function(e){
          e.preventDefault()
          mBtnDep2 = !mBtnDep2
          if(mBtnDep2){

@@ -17,6 +17,33 @@ $('.main_pro li').mouseenter(function(){
     
 })
 
+//==================================== sub Products
+
+$('.pro_conts .thum_wrap').find('a').click(function(e){
+    e.preventDefault()
+    var link = $(this).attr('href')
+    
+    if($(link).hasClass('on')){
+        console.log('noway')
+    }else{
+        $('.pro_info').removeClass('on')
+        $(link).addClass('on')
+    }
+})
+
+$(window).scroll(function(){
+    var scrlTop = $(this).scrollTop()
+
+    $('.pro_conts').each(function(idx){
+        var contTop = $(this).offset().top
+
+        if(scrlTop>=contTop-200){
+            $('.products_map ul li a').removeClass('on')
+            $('.products_map ul li').eq(idx).find('a').addClass('on')
+        }
+    })
+})
+
 
 
 //==================================== register

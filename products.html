@@ -29,7 +29,7 @@
         <div class="pro_conts_wrap">
             <div id="cord-free" class="pro_conts">
                 <div class="inner">
-                    <div id="cordfree1" class="pro_info">
+                    <div id="cordfree1" class="pro_info on">
                         <div class="info">
                             <h4 class="imgName big"><span><img src="img/cordfree1_1_name.png" alt=""></span></h4>
                             <p class="txt">다이슨의 가장 강력한 흡입력과<br>6단계 고성능 필터레이션으로 초미세먼지까지 잡아냅니다.</p>
@@ -108,7 +108,7 @@
 
                     <div id="cordfree7" class="pro_info">
                         <div class="info">
-                            <h4 class="imgName"><span><img src="img/cordfree1_7_name.png" alt=""></span>다이슨 V8 슬림 플러피+</h4>
+                            <h4 class="imgName"><span><img src="img/cordfree1_5_name.png" alt=""></span>다이슨 V8 슬림 플러피+</h4>
                             <p class="txt">새롭게 설계된 클리너 헤드<br>40% 작아지고 40% 가벼워졌고,<br>강력한 성능을 선보입니다.</p>
                             <p class="price">
                                 <strong><span clas="won">\</span>649,000</strong>
@@ -118,18 +118,24 @@
                     </div>
                     <!-- cordfree7 -->
 
-                    <div class="swiper-container thum_wrap thum1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><a href="#cordfree1"><span><img src="img/cordfree1_1.png" alt=""></span><em>다이슨 V11 220 에어와트 CF+</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree2"><span><img src="img/cordfree1_2.png" alt=""></span><em>다이슨 V11 토탈 클린</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree3"><span><img src="img/cordfree1_3.png" alt=""></span><em>다이슨 V11 플러피</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree4"><span><img src="img/cordfree1_4.png" alt=""></span><em>다이슨 V10 카본 파이버</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree5"><span><img src="img/cordfree1_5.png" alt=""></span><em>다이슨 V8 플러피</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree6"><span><img src="img/cordfree1_6.png" alt=""></span><em>다이슨 V8 앱솔루트</em></a></div>
-                            <div class="swiper-slide"><a href="#cordfree7"><span><img src="img/cordfree1_7.png" alt=""></span><em>다이슨 V8 슬림 플러피+</em></a></div>
+                    <div class="thum_container">
+                        <div class="swiper-container thum_wrap thum1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#cordfree1"><span><img src="img/cordfree1_1.png" alt=""></span><em>V11 220<br>에어와트 CF+</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree2"><span><img src="img/cordfree1_2.png" alt=""></span><em>V11 토탈 클린</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree3"><span><img src="img/cordfree1_3.png" alt=""></span><em>V11 플러피</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree4"><span><img src="img/cordfree1_4.png" alt=""></span><em>V10 카본 파이버</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree5"><span><img src="img/cordfree1_5.png" alt=""></span><em>V8 플러피</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree6"><span><img src="img/cordfree1_6.png" alt=""></span><em>V8 앱솔루트</em></a></div>
+                                <div class="swiper-slide"><a href="#cordfree7"><span><img src="img/cordfree1_7.png" alt=""></span><em>V8 슬림 플러피+</em></a></div>
+                                <div class="swiper-slide"><a href="#"><span></span></a></div>
+                            </div>
                         </div>
+                        <!-- thum_wrap -->
                         <div class="cover"></div>
+                        <div class="cover cover-btm"></div>
                     </div>
+                    <!-- thum_container -->
                 </div>
                 <!-- inner -->
             </div>
@@ -181,12 +187,36 @@
     <script src="js/jquery.js"></script>
 
     <script>
-    var swiper = new Swiper('.thum1', {
-        direction: 'vertical',
-        slidesPerView: 6,
-        spaceBetween: 0,
-        mousewheel: true,
-    });
+        var w = $(window).width()
+        deviceCheck()
+        $(window).resize(function(){
+            w = $(window).width()
+            deviceCheck()
+        })
+
+        function deviceCheck(){
+            if (w>1024){
+                var swiper = new Swiper('.thum1', {
+                    direction: 'vertical',
+                    slidesPerView: 6,
+                    mousewheel: true,
+                });
+            }else if(w>768){
+                var swiper = new Swiper('.thum1', {
+                    direction: 'horizontal',
+                    slidesPerView: 7,
+                    mousewheel: true,
+                });
+            }else{
+                var swiper = new Swiper('.thum1', {
+                    direction: 'horizontal',
+                    slidesPerView: 5,
+                    mousewheel: true,
+                });
+            }
+
+        }
+    
     </script>
 </body>
 </html>
