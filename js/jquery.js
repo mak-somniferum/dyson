@@ -107,34 +107,17 @@ $('.cust_check_box a').click(function(e){
     $('.cust_check_text a').eq(idx).addClass('on')
     $('.cust_part_box li').stop().fadeOut()
     $(url).stop().fadeIn()
-    $('.cust_part_box').stop().animate({height: 0})
-    $(url).parent().stop().animate({height: h})
 })
 $('.cust_check_text a').click(function(e){
     e.preventDefault()
     var url = $(this).attr('href')
-    var h = $(url).height()
     $('.cust_check_text a').removeClass('on')
     $(this).addClass('on')
     $('.cust_part_box li').stop().fadeOut()
     $(url).stop().fadeIn()
-    $('.cust_part_box').stop().animate({height: 0})
-    $(url).parent().stop().animate({height: h})
 })
 
-    $(window).resize(function(){
-        // if(w > 1200){
-        //     $('.cust_part_box').stop().animate({height: h})
-        // }else if(w > 960){
-        //     $('.cust_part_box').stop().animate({height: h})
-        // }else if(w > 720){
-        //     $('.cust_part_box').stop().animate({height: h})
-        // }else{
-        //     $('.cust_part_box').stop().animate({height: h})
-        // }
 
-        $('.cust_part_box li').css({height: 'auto'})
-    })
 
 // promotion      // promotion      // promotion
 // promotion      // promotion      // promotion

@@ -1,6 +1,6 @@
 .customer{
     position: relative;
-    height: 60vh;
+    height: 70vh;
     max-height: 800px;
     overflow: hidden;
     padding-top: 100px;
@@ -19,7 +19,7 @@
     min-width: 100%;
     min-height: 100%;
     position: absolute;
-    top: 10%;
+    top: 10%; c
     left: 50%;
     transform: translate(-50%, -10%);
     border: 1px solid #000;
@@ -109,13 +109,8 @@
     display: block;
     height: 100%;
 }
-.cust_part_box{
-    position: relative;
-    /* overflow: hidden; */
-}
 .cust_part_box li{
     width: 100%;
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
