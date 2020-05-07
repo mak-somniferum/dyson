@@ -1,14 +1,13 @@
 /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */ /* 첫번째 페이지 */
 .s_content_wrap {
-  width: 99vw;
+  width: 98vw;
   margin-top: 70px;
-  
 }
 
 .s_arti {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  margin-left: -30%;
+  /* margin-left: -30%; */
 }
 
 article {
@@ -193,9 +192,6 @@ article {
 }
 .s_arti .swiper-slide {
   background-position: center;
-  background-size: cover;
-}
-.s_arti .swiper-slide {
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -213,36 +209,55 @@ article {
 .s_arti5 {
   box-shadow: 0px 15vh 70px rgba(211, 210, 210, 0.37);
 }
-
+.s_boxson1 {
+  display: none;
+  width: 80%;
+  height: 800px;
+  position: relative;
+  left: 5%;
+  top: 20%;
+}
+.s_boxson1.on {
+  display: block;
+}
 .s_left_txt {
   position: absolute;
-  left: -65%;
-  top: 5%;
-  width: 75%;
+  left: 20%;
+  top: 20%;
+  width: 25%;
+}
+.s_left_txt3{
+  width: 28% !important;
 }
 .s_left_txt h1 {
   font-size: 3em;
 }
+
+.s_left_txt h2 {
+  font-size: 1.8em;
+  color: rgb(1, 147, 231);
+}
+
 .s_left_txt h3 {
   color: gray;
 }
 
 .s_left_txt h4 {
   font-size: 2em;
-  color: #4b88c5;
+  color: #0080ff;
   font-weight: 200;
 }
 
 .s_left_txt h5 {
   font-size: 3em;
-  color: #0066cc;
+  color: #2d557e;
 }
 
 .s_right_txt {
   position: absolute;
-  right: -75%;
-  top: 12%;
-  width: 90%;
+  right: -5%;
+  top: 25%;
+  width: 35%;
 }
 
 .s_right_txt h4 {
@@ -258,12 +273,19 @@ article {
 .s_right_txt ul li {
   list-style-type: disc;
 }
-.s_left_txt2,
+
+/* .s_left_txt2,
 .s_left_txt2-1,
 .s_left_txt3,
 .s_left_txt3-1 {
   display: none;
 }
+.s_right_txt2,
+.s_right_txt2-1,
+.s_right_txt3,
+.s_right_txt3-1 {
+  display: none;
+} */
 
 @media screen and (max-width: 586px) {
   .s_arti1_bg1,
@@ -477,8 +499,8 @@ article {
 /* 공통 메인 */
 /* 공통 메인 */
 .promotion {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 70vh;
 }
 .promotion_wrap {
   width: 100%;
@@ -490,7 +512,7 @@ article {
   width: 60vw;
   height: 60vh;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -527,12 +549,12 @@ article {
   padding: 1%;
 }
 
-.promotion_wrap > img {
+/* .promotion_wrap > img {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   height: auto;
   color: white;
   text-align: center;
-}
+} */
