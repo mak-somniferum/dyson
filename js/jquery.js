@@ -143,7 +143,7 @@ var mySwiper1 = new Swiper(".swiper-container-1", {
 
 mySwiper1.on("slideChange", function () {
   var activeidx = mySwiper1.activeIndex
-  $(".s_boxson1").siblings().removeClass("on")
+  $(".s_boxson1").removeClass("on")
   $(".s_boxson1").eq(activeidx).addClass("on")
 })
 
@@ -163,8 +163,8 @@ var mySwiper2 = new Swiper(".swiper-container-2", {
 
 mySwiper2.on("slideChange", function () {
   var activeidx = mySwiper2.activeIndex
-  $(".s_boxson1").siblings().removeClass("on")
-  $(".s_boxson1").eq(activeidx).addClass("on")
+  $(".s_boxson2").removeClass("on")
+  $(".s_boxson2").eq(activeidx).addClass("on")
 })
 
 var mySwiper3 = new Swiper(".swiper-container-3", {
@@ -183,8 +183,8 @@ var mySwiper3 = new Swiper(".swiper-container-3", {
 
 mySwiper3.on("slideChange", function () {
   var activeidx = mySwiper3.activeIndex
-  $(".s_boxson1").siblings().removeClass("on")
-  $(".s_boxson1").eq(activeidx).addClass("on")
+  $(".s_boxson3").siblings().removeClass("on")
+  $(".s_boxson3").eq(activeidx).addClass("on")
 })
 
 // $(".s_arti .swiper-slide").each(function(idx){
