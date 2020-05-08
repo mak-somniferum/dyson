@@ -10,13 +10,15 @@
 
 .register{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: #000;
     color: #fff;
     text-align: center;
     position: relative;
 }
-
+.register button{
+    background-color: #000;
+}
 .regi_bg{
     height: 100%;
     position: relative;
@@ -46,6 +48,7 @@
     transform: translate(-50%,-50%);
     opacity: 0;
     font-size: 1vw;
+    
 }
 .regi_txt_m{
     position: absolute;
@@ -55,13 +58,20 @@
     display: none;
     font-size: 1vw;
 }
-
+.regi_txt_m h2{
+    color: #fff;
+}
+.regi_txt_m h3{
+    color: #fff;
+}
 
 .regi_txt h2{
     margin: 15px;
+    color: #fff;
 }
 .regi_txt h3{
     margin: 15px;
+    color: #fff;
 }
 .register button{
     width: 30%;
@@ -101,7 +111,7 @@
         display: block;
         opacity: 0;
     }
-    
+
 
     .regi_txt{
         display: none;
@@ -161,7 +171,9 @@
 .regi_sect1{
     padding-top: 70px;
 }
-
+.regi_sect1 .title1{
+    text-align: center;
+}
 .regi_wrap{
     height: 80%;
     flex-direction: column;
@@ -171,6 +183,7 @@
 }
 .why{
     width: 80%;
+    margin-top: 50px;
 }
 .why img{
     width: 100%;
@@ -180,7 +193,6 @@
     height: 50%;
 }
 .why_txt li{
-    border: 1px solid #000;
     width: 25%;
     height: 100%;
     float: left;
@@ -206,8 +218,10 @@
 .tit{
     width: 50%;
     height: 100%;
+}
+.tit h2{
     color: #fff;
-    font-size: 1vw;
+    font-size: 30px;
 }
 .tit:first-child{
     float: left;
@@ -289,10 +303,20 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     padding: 10px;
+}
+.regi_paper .close{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.regi_paper .close img{
+    width: 100%;
 }
 .form h2{
     padding: 15px;
@@ -367,9 +391,11 @@ input{
     } 
     .why{
         width: 100%;
+        margin-top: 20px;
     }
+    
     .why_txt{
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
     .why_txt li{
@@ -428,9 +454,35 @@ input{
     .regi_sect2_bg{
       height: 85%;
     }
+    .regi_sect2_bg .box_wrap{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+        border: 1px solid #000;
+    }
+    .regi_sect2_bg .box{
+        width: 500px;
+        height: 300px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        position: relative;
+        opacity: 1;
+    }
 
+    .regi_sect2_bg .box img{
 
- 
+        width: 40%;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .regi_sect2_bg .box p{
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
 
  

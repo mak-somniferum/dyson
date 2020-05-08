@@ -50,12 +50,20 @@ $(window).scroll(function(){
 
 //==================================== register
 
+$(window).scroll(function(){
+
+  var scrl=$('.register').offset().top
+  // console.log(scrl)
+  var secT=$(window).scrollTop()
+  // console.log(secT)
+  if( secT <= scrl ){
+    
 $(".regi_bg_img").first().fadeOut(2000)
 $(".regi_bg_img").last().fadeIn(2000)
 
 $(".regi_bg_m").animate({ height: "50%" }, 2000)
 
-$(".regi_prod").animate({ opacity: "1", bottom: "14%" }, 2000)
+$(".regi_prod").animate({ opacity: "1", bottom: "23%" }, 2000)
 
 $(".regi_txt").animate({ opacity: "1", top: "40%" }, 2000)
 $(".regi_txt_m").animate({ opacity: "1", top: "63%" }, 2000)
@@ -63,10 +71,21 @@ $(".regi_txt_m").animate({ opacity: "1", top: "63%" }, 2000)
 $(".regi_sect2_bg .bg").first().fadeOut(2000)
 $(".regi_sect2_bg .bg").last().fadeIn(2000)
 
+
+  }
+})
+
+
+
+
 $(".regi_go").click(function (e) {
   e.preventDefault()
-
   $(".regi_paper").fadeIn()
+
+  $('.regi_paper .close').click(function(e){
+    e.preventDefault()
+    $('.regi_paper').fadeOut()
+  })
 })
 
 $('.fin button').click(function(){
@@ -81,6 +100,8 @@ $('.form button').click(function(){
     $('.form').css({'display':'none'})
     $('.fin').css({'display':'block'})
 })
+
+
 
 
 
