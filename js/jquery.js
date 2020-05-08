@@ -85,10 +85,10 @@ $(".form button").click(function () {
 
 //customer
 $(".cust_check_box li a").mouseenter(function () {
-  $(this).find("img").stop().animate({ width: "70%" })
+  $(this).find("img").stop().animate({ width: "65%", height: "85%" })
 })
 $(".cust_check_box li a").mouseleave(function () {
-  $(".cust_check_box img").stop().animate({ width: "60%" })
+  $(".cust_check_box img").stop().animate({ width: "60%", height: "80%" })
 })
 
 $(".cust_check_box a").click(function (e) {
