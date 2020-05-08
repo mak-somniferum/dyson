@@ -21,32 +21,32 @@ $(".main_pro li").mouseenter(function () {
 
 //==================================== sub Products
 
-$('.pro_conts .thum_wrap').find('a').click(function(e){
+$(".pro_conts .thum_wrap")
+  .find("a")
+  .click(function (e) {
     e.preventDefault()
-    var link = $(this).attr('href')
-    
-    if($(link).hasClass('on')){
-        console.log('noway')
-    }else{
-        $('.pro_info').removeClass('on')
-        $(link).addClass('on')
+    var link = $(this).attr("href")
+
+    if ($(link).hasClass("on")) {
+      console.log("noway")
+    } else {
+      $(".pro_info").removeClass("on")
+      $(link).addClass("on")
     }
+  })
+
+$(window).scroll(function () {
+  var scrlTop = $(this).scrollTop()
+
+  $(".pro_conts").each(function (idx) {
+    var contTop = $(this).offset().top
+
+    if (scrlTop >= contTop - 200) {
+      $(".products_map ul li a").removeClass("on")
+      $(".products_map ul li").eq(idx).find("a").addClass("on")
+    }
+  })
 })
-
-$(window).scroll(function(){
-    var scrlTop = $(this).scrollTop()
-
-    $('.pro_conts').each(function(idx){
-        var contTop = $(this).offset().top
-
-        if(scrlTop>=contTop-200){
-            $('.products_map ul li a').removeClass('on')
-            $('.products_map ul li').eq(idx).find('a').addClass('on')
-        }
-    })
-})
-
-
 
 //==================================== register
 
@@ -69,55 +69,48 @@ $(".regi_go").click(function (e) {
   $(".regi_paper").fadeIn()
 })
 
-$('.fin button').click(function(){
-    $('.regi_paper').fadeOut(function(){
-     $('.fin').css({'display':'none'})
-    $('.form').css({'display':'block'})   
-    })
-    
+$(".fin button").click(function () {
+  $(".regi_paper").fadeOut(function () {
+    $(".fin").css({ display: "none" })
+    $(".form").css({ display: "block" })
+  })
 })
 
-$('.form button').click(function(){
-    $('.form').css({'display':'none'})
-    $('.fin').css({'display':'block'})
+$(".form button").click(function () {
+  $(".form").css({ display: "none" })
+  $(".fin").css({ display: "block" })
 })
-
-
-
-
 
 //==================================== Customer
 
 //customer
-$('.cust_check_box li').mouseenter(function(){
-    $(this).find('img').stop().animate({'width': '70%'})
+$(".cust_check_box li a").mouseenter(function () {
+  $(this).find("img").stop().animate({ width: "70%" })
 })
-$('.cust_check_box li').mouseleave(function(){
-    $('.cust_check_box img').stop().animate({'width': '60%'})
-})
-
-$('.cust_check_box a').click(function(e){
-    e.preventDefault()
-    $('.cust_check_box').fadeOut()
-    $('.customer_box').fadeIn()
-    var idx = $(this).parent().index()
-    var url = $(this).attr('href')
-    var h = $(url).height()
-    $('.cust_check_text a').removeClass('on')
-    $('.cust_check_text a').eq(idx).addClass('on')
-    $('.cust_part_box li').stop().fadeOut()
-    $(url).stop().fadeIn()
-})
-$('.cust_check_text a').click(function(e){
-    e.preventDefault()
-    var url = $(this).attr('href')
-    $('.cust_check_text a').removeClass('on')
-    $(this).addClass('on')
-    $('.cust_part_box li').stop().fadeOut()
-    $(url).stop().fadeIn()
+$(".cust_check_box li a").mouseleave(function () {
+  $(".cust_check_box img").stop().animate({ width: "60%" })
 })
 
-
+$(".cust_check_box a").click(function (e) {
+  e.preventDefault()
+  $(".cust_check_box").fadeOut()
+  $(".customer_box").fadeIn()
+  var idx = $(this).parent().index()
+  var url = $(this).attr("href")
+  var h = $(url).height()
+  $(".cust_check_text a").removeClass("on")
+  $(".cust_check_text a").eq(idx).addClass("on")
+  $(".cust_part_box li").stop().fadeOut()
+  $(url).stop().fadeIn()
+})
+$(".cust_check_text a").click(function (e) {
+  e.preventDefault()
+  var url = $(this).attr("href")
+  $(".cust_check_text a").removeClass("on")
+  $(this).addClass("on")
+  $(".cust_part_box li").stop().fadeOut()
+  $(url).stop().fadeIn()
+})
 
 // promotion      // promotion      // promotion
 // promotion      // promotion      // promotion
