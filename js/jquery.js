@@ -21,19 +21,24 @@ $(".main_pro li").mouseenter(function () {
 
 //==================================== sub Products
 
-$(".pro_conts .thum_wrap")
-  .find("a")
-  .click(function (e) {
+$(".pro_conts .thum_wrap").find("a").click(function (e) {
     e.preventDefault()
     var link = $(this).attr("href")
 
     if ($(link).hasClass("on")) {
       console.log("noway")
     } else {
-      $(".pro_info").removeClass("on")
+      $(link).parents('.pro_conts').find(".pro_info").removeClass("on")
       $(link).addClass("on")
     }
-  })
+})
+
+$('.products_map ul li a').click(function(e){
+  e.preventDefault()
+  var link = $(this).attr('href')
+  var linkTop = $(link).offset().top
+  $('body,html').animate({'scrollTop':linkTop-110})
+})
 
 $(window).scroll(function () {
   var scrlTop = $(this).scrollTop()
