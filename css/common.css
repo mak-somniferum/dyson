@@ -56,10 +56,13 @@
 .f_utill ul.utill01 li {padding:0 8px;}
 .f_utill ul.utill01 li a {color:#fff; font-size:15px;}
 .f_utill ul.utill02 li {padding:0 5px;}
-.f_utill a.privacy {color:#B18800;}
+.f_utill ul.utill02 li a {color:#666;}
+.f_utill ul.utill02 li a.privacy {color:#B18800;}
 
 .f_info {padding-top:50px; border-top:1px solid #1d1d1d; margin-top:50px; line-height:16px;}
-.f_info a {color:#999;}
+.f_info p, .f_info address {color:#666;}
+.f_info address a {color:#999;}
+
 
 
 @media (max-width:1200px){
