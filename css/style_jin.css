@@ -42,6 +42,8 @@
 .pro_info .price .normal {font-size:25px; color:#999; text-decoration: line-through;}
 .pro_info .price .normal .won {font-size:23px; color:inherit;}
 
+#cordfree4 .imgName span img {max-width:334px;}
+
 .pro_colorSlide {position:relative; height:100%;}
 .pro_colorSlide .proImg img {position:absolute; left:0; top:50%; transform: translateY(-50%); display:none;}
 .pro_colorSlide .proImg img:first-child {display:block;}
@@ -49,10 +51,11 @@
 .pro_colorSlide .colorChange li {padding:0 3px;}
 .pro_colorSlide .colorChange li a {display:block; width:15px; height:15px; border-radius:50%; font-size:0; border:1px solid #ddd;}
 
-
+#air-quality .pro_colorSlide .colorChange,
+#lighting .pro_colorSlide .colorChange {left:50%; transform:translateX(-100%);}
 
 .pro_conts .thum_container {position:absolute; right:20px; top:50%; transform:translateY(-50%); width:80px; height:632px; overflow-y: hidden;}
-.pro_conts .thum_container .cover {position:absolute; right:0; top:0; z-index:10; width:100%; height:50px; background:url('../img/gradation.png') no-repeat; background-size:100% auto;}
+.pro_conts .thum_container .cover {position:absolute; right:0; top:0; z-index:10; width:80px; height:50px; background:url('../img/gradation.png') no-repeat; background-size:100% auto;}
 .pro_conts .thum_container .cover-btm {top:auto; bottom:0; background-position:center bottom;}
 
 .pro_conts .thum_wrap {width:100%; height:100%;}
@@ -64,7 +67,10 @@
 .pro_conts .thum_wrap .swiper-slide a em {opacity:0; display:block; position:absolute; left:50%; bottom:-2px; transform:translate(-50%, 100%); width:100%; text-align:center; font-size:11px; color:#666; line-height:1; transition:opacity .2s;}
 .pro_conts .thum_wrap .swiper-slide a:hover em {opacity:1;}
 
-#hair-care.pro_conts .thum_wrap .swiper-slide a span img {transform: translate(0,0);}
+#hair-care.pro_conts .thum_wrap .swiper-slide a span img,
+#air-quality.pro_conts .thum_wrap .swiper-slide a span img,
+#lighting.pro_conts .thum_wrap .swiper-slide a span img,
+#support.pro_conts .thum_wrap .swiper-slide a span img {transform: translate(0,0);}
 
 @media (max-width:1200px){
     .pro_info .info {width:65%;}
@@ -75,9 +81,9 @@
 
     .pro_info .info {width:70%; padding-left:5%;}
     .pro_info .img {width:30%;}
-    .pro_conts .thum_container {left:50%; right:auto; top:auto; bottom:0; z-index:1000; border:1px solid red; transform:translate(-50%, 0); width:100%; height:80px; overflow-x: hidden;}
-    .pro_conts .thum_container .cover {left:0; top:0; z-index:10; width:50px; height:100%; background:url('../img/gradation.png') no-repeat; background-size:100% auto;}
-    .pro_conts .thum_container .cover-btm {top:auto; bottom:0; background-position:center bottom;}
+    .pro_conts .thum_container {left:50%; right:auto; top:auto; bottom:0; z-index:100; transform:translate(-50%, 0); width:100%; height:80px; overflow-x: hidden;}
+    .pro_conts .thum_container .cover {left:-15px; top:15px; z-index:100; background:url('../img/gradation.png') no-repeat; background-size:100% auto; transform: rotate(-90deg);}
+    .pro_conts .thum_container .cover-btm {left:auto; right:-15px; transform: rotate(90deg);}
     .pro_conts .thum_wrap .swiper-wrapper {padding-top:0; padding-left:50px;}
 }
 @media (max-width:768px){
@@ -97,6 +103,16 @@
     .main_pro li a span {margin-bottom:20px;}
     .main_pro li a span img,
     .main_pro li:hover a span img {max-height:80px;}
+
+    .pro_conts, .pro_conts .inner {height:500px;}
+    .pro_conts {background-position:left -130px;}
+    .pro_info .imgName {font-size:30px;}
+    .pro_info .imgName span .img,
+    .pro_info .imgName.big span img {width:100%; height:auto;}
+    .pro_info .txt {font-size:20px; line-height:30px;}
+    .pro_info .price strong {font-size:40px;}
+    .pro_info .price .normal {font-size:20px;}
+    .pro_info .price .normal .won {font-size:18px;}
 }
 @media (max-width:500px){
     
